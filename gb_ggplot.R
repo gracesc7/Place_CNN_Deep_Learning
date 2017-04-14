@@ -26,13 +26,19 @@ gbstats <- summarySE(goodbad, measurevar="value", groupvars=c("Layers"))
 
 library(ggplot2)
 p<- ggplot(gbstats, aes(x=Layers, y=value)) +ggtitle('Good vs Bad Classification')
-p+ geom_bar(position=position_dodge(.9), colour="black", stat="identity") +
-  geom_errorbar(position=position_dodge(.9), width=.25, aes(ymin=value-ci, ymax=value+ci)) +
-  theme_bw()  +scale_fill_manual(values=c(rgb(200/255, 3/255,99/255)))+
-  ylab('Classifier Accuracy') + 
-  theme(axis.title.x = element_text(size=24)) + theme(axis.text.x = element_text(size=20, angle = 90))+
-  theme(axis.title.y = element_text(size=24)) + theme(axis.text.y = element_text(size=20))+ 
-  theme(  panel.grid.minor = element_blank()) +
-  theme(axis.line = element_line(color = 'black'))+ geom_hline(aes(yintercept = 0.5),linetype="dotted")
+
+p+ geom_bar(position=position_dodge(.9), colour="black",fill="#5FC1DB" ,stat="identity") +
+  geom_errorbar(position=position_dodge(.9), width=.25, aes(ymin=value-ci, ymax=value+ci)) +theme_bw()+ylab('Classifier Accuracy')+
+  theme(axis.title.x = element_text(size=24)) + theme(axis.text.x = element_text(size=24, angle = 90))+
+  theme(axis.title.y = element_text(size=24)) + theme(axis.text.y = element_text(size=20))+
+  theme(plot.title = element_text(family = "Trebuchet MS", color="#000000", face="bold", size=30, hjust=0.4)) 
+
+
+#67A8C9
+ 
+  #theme(legend.text=element_text(size=20)) + theme(legend.title=element_blank())+
+  
+  #theme(  panel.grid.minor = element_blank()) +
+  #theme(axis.line = element_line(color = 'black'))+ geom_hline(aes(yintercept = 0.5),linetype="dotted")
  
 
