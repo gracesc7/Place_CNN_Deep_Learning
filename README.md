@@ -7,10 +7,10 @@ The spatial hierarchical structure of CNNs mimic the receptive fields of neurons
 Humans are very good at distinguishing Good examplars from Bad exemplars of natural scenes. Human fMRI studies, show distinct differences in various brain regions in decoding scene category for good and bad exemplars. Do we see similar pattern of results if we decode good and bad scenes in CNNs?
 
 **Approach:**
-- images to be analyzed from 6 categories: Beaches, City Streets, Forests, Highways, Mountains and Offices
+- Analyzed natural scene images from 6 categories: Beaches, City Streets, Forests, Highways, Mountains and Offices
 - Good and Bad Exemplars rated for category representativeness on Amazon Turk
 - Pre-trained PlacesCNN (Zhou et al.,2014), Pycaffe
-- extract features for layer conv1 to fc7
+- Extracted features for layer conv1 to fc7
 - Classifications: Good VS Bad classificatoin and Six-way category classification
 - Anaconda, Jupyter Notebook, Cuda
 
