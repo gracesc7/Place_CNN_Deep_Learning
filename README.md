@@ -12,7 +12,7 @@ Humans are very good at distinguishing Good examplars from Bad exemplars of natu
 - Pre-trained PlacesCNN (Zhou et al.,2014), Pycaffe
 - extract features for layer conv1 to fc7
 - Classifications: Good VS Bad classificatoin and Six-way category classification
-- Linear SVM, Anaconda
+- Anaconda, Jupyter Notebook, Cuda
 
 **Acknowledgement:**
 I would like to thank my research mentor Manoj Kumar for his patient and consistent mentorship on this research. 
