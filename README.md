@@ -14,6 +14,9 @@ Humans are very good at distinguishing Good examplars from Bad exemplars of natu
 - Classifications: Good VS Bad classificatoin and Six-way category classification
 - Anaconda, Jupyter Notebook, Cuda
 
+**Conference Abstract:**
+https://jov.arvojournals.org/article.aspx?articleid=2651182
+
 **Acknowledgement:**
 I would like to thank my research mentor Manoj Kumar for his patient and consistent mentorship on this research. 
 
